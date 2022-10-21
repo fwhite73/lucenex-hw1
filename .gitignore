@@ -1,0 +1,7 @@
+.idea/
+index/*.cfe
+index/*.cfs
+index/*.si
+index/segments_*
+index/write.lock
+target/

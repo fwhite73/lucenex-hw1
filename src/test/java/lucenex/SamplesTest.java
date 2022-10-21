@@ -11,6 +11,7 @@ import java.util.Collection;
 import java.util.HashMap;
 import java.util.Map;
 
+import index.FileIndexer;
 import org.apache.lucene.analysis.Analyzer;
 import org.apache.lucene.analysis.CharArraySet;
 import org.apache.lucene.analysis.TokenStream;
@@ -89,7 +90,6 @@ public class SamplesTest {
             } finally {
                 directory.close();
             }
-
         }
     }
 
@@ -296,6 +296,11 @@ public class SamplesTest {
         StringWriter w = new StringWriter();
         new TokenStreamToDot(null, ts, new PrintWriter(w)).toDot();
         System.out.println(w);
+    }
+
+    @Test
+    public void testFileIndexer() throws Exception {
+        FileIndexer.createIndex(null);
     }
 
 }
