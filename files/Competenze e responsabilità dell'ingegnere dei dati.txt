@@ -1,0 +1,14 @@
+L'ingegneria dei dati richiede un ampio spettro di competenze, dalla programmazione, alla progettazione di database, fino all'architettura di sistema. Ecco alcuni esempi:
+
+    vasta esperienza nelle tecniche di elaborazione dei dati ed ETL/ELT
+    conoscenza di Python, SQL e Linux
+    conoscenze approfondite di gestione di cluster, visualizzazione di dati, elaborazione in batch e machine learning
+    attitudine a sviluppare una comprensione di fondo dei dati aziendali
+    capacità comprovata di realizzare un'architettura appropriata e una gestione sostenibile delle pipeline
+    competenze avanzate nella creazione di report e dashboard
+
+Gli ingegneri dei dati sono impegnati a rendere disponibile la giusta tipologia di dati nel momento giusto. Un buon ingegnere dei dati anticipa le domande dei data scientist e il modo in cui vogliono che i dati vengano presentati. Inoltre, garantisce che i dati più pertinenti siano affidabili, trasformati e pronti all'uso. Si tratta di un compito difficile, perché la maggior parte delle organizzazioni raramente raccoglie dati grezzi puliti.
+
+Per assolvere il loro compito, gli ingegneri dei dati devono essere esperti di Python, SQL e Linux. Possono inoltre essere utili competenze di gestione di cluster, visualizzazione di dati, elaborazione in batch e machine learning. Gli ingegneri dei dati usano queste tecniche di elaborazione per "plasmare" i dati in un formato che agevoli centinaia di interrogazioni (query).
+
+Gli ingegneri dei dati possono non essere coinvolti direttamente nell'analisi dei dati, ma devono avere una comprensione di base dei dati aziendali per approntare un'architettura adeguata. Creare la migliore architettura di sistema dipende dalla capacità di un ingegnere dei dati di realizzare e mantenere le pipeline di dati. Gli ingegneri dei dati esperti sono in grado di fondere diverse tecnologie di elaborazione dei Big Data per soddisfare tutte le esigenze di gestione dei dati di un'azienda.

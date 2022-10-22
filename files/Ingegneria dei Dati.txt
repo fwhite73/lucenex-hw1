@@ -1,0 +1,3 @@
+Le conclusioni tratte da grandi set di dati sono utili solo se è garantita l'integrità dei dati. Senza un'architettura che possa strutturare e formattare set di dati sempre più grandi e in continuo cambiamento, i data scientist non possono fare previsioni accurate. È qui che entra in gioco l'ingegneria dei dati.
+
+Il Data Engineering è il processo di raccolta, conversione e convalida dei dati per l'analisi. In particolare, gli ingegneri dei dati costruiscono data warehouse per consentire di prendere decisioni guidate dai dati. L'ingegneria dei dati getta le basi per le applicazioni della data science nel mondo reale. Lavorando in armonia, ingegneri e scienziati dei dati possono fornire continuamente informazioni preziose.

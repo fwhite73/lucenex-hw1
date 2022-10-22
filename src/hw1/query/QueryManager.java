@@ -1,6 +1,5 @@
 package query;
 
-import index.FileIndexer;
 import org.apache.lucene.analysis.core.WhitespaceAnalyzer;
 import org.apache.lucene.document.Document;
 import org.apache.lucene.index.DirectoryReader;
@@ -25,17 +24,11 @@ public class QueryManager {
         try {
             Query query;
             if(isPhraseQuery(queryString)) {
-                query = new PhraseQuery.Builder()
-                        .add(new Term(field, queryString.substring(1, queryString.length()-1)))
-                        .build();
-                try (Directory directory = FSDirectory.open(Paths.get(INDEX_DIRECTORY))) {
-                    try (IndexReader reader = DirectoryReader.open(directory)) {
-                        IndexSearcher searcher = new IndexSearcher(reader);
-                        runQuery(searcher, query);
-                    } finally {
-                        directory.close();
-                    }
-                }
+                queryString = queryString.replace("\"","");
+                PhraseQuery.Builder queryBuilder = new PhraseQuery.Builder();
+                for(String s : queryString.split(" "))
+                    queryBuilder.add(new Term(field, s.toLowerCase()));
+                query = queryBuilder.build();
             }
             else {
                 QueryParser parser = new QueryParser(field, new WhitespaceAnalyzer());

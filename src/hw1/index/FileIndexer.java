@@ -44,23 +44,23 @@ public class FileIndexer {
             saveArrayToFile("stopWords.txt", stopWords.split(","));
 
             // analyzer per il campo titolo
-            Analyzer analyzer_name = CustomAnalyzer.builder()
+            Analyzer titleAnalyzer = CustomAnalyzer.builder()
                     .withTokenizer(WhitespaceTokenizerFactory.class)
                     .addTokenFilter(LowerCaseFilterFactory.class)
                     .addTokenFilter(WordDelimiterGraphFilterFactory.class)
                     .build();
-            perFieldAnalyzers.put("titolo", analyzer_name);
+            perFieldAnalyzers.put("titolo", titleAnalyzer);
 
             // è necessario definire la cartella
             // da cui prendere i file nei parametri (in questo caso le stop words)
             Path resources = Paths.get("");
 
             // analyzer per il campo contenuto
-            Analyzer analyzer_content = CustomAnalyzer.builder(resources)
+            Analyzer contentAnalyzer = CustomAnalyzer.builder(resources)
                     .withTokenizer(WhitespaceTokenizerFactory.class)
                     .addTokenFilter(LowerCaseFilterFactory.class)
                     .addTokenFilter(WordDelimiterGraphFilterFactory.class)
-                    // definisco lo stop filter con la mia lista di stop words
+                    // definisco lo stop filter con la lista di stop words estrapolata dall'ItalianAnalyzer()
                     // per definire parametri è necessario utilizzare coppie di parametri
                     // nome parametro, valore parametro
                     .addTokenFilter(StopFilterFactory.NAME,
@@ -68,7 +68,7 @@ public class FileIndexer {
                                     "words", "stopWords.txt",
                                     "format", "wordset")
                     .build();
-            perFieldAnalyzers.put("contenuto", analyzer_content);
+            perFieldAnalyzers.put("contenuto", contentAnalyzer);
 
             // definisco l'analyzer utilizzando le precedenti inizializzazioni
             Analyzer analyzer = new PerFieldAnalyzerWrapper(new ItalianAnalyzer(), perFieldAnalyzers);

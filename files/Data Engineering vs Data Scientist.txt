@@ -1,0 +1,5 @@
+I concetti di Data Engineering e Data Scientist, poiché sono spesso confusi. Pertanto, chiariamo quali sono le principali differenze tra le due professioni.
+
+Da una parte, data scientist o data scientist Di solito lavorano nelle università o in contesti di ricerca. Ricerca e sviluppo. La loro formazione è più accademica e di solito hanno diplomi universitari in matematica, statistica, fisica o campi vicini alla matematica applicata. Tendono a concentrarsi sull’analisi. L’attività quotidiana di un data scientist potrebbe essere lo sviluppo di nuovi algoritmi o funzionalità, l’estrazione di modelli e la visualizzazione dei dati.
+
+D’altro canto, ingegneri dei dati o ingegneri dei dati è probabile che abbiano specializzato nella programmazione, come in Java o Python, anche se non era la sua professione. Usano competenze avanzate di programmazione e costruzione di sistemi per creare soluzioni software. Non solo possono costruire un flusso di dati, ma conoscono le formule per combinare varie tecnologie per creare la migliore soluzione per l’organizzazione.
